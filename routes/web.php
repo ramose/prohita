@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', [clientController::class, "index"]);
+Route::get('/', [clientController::class, "home"]);
 Route::get('/client', [clientController::class, "index"]);
 Route::get('/client/create', [clientController::class, "create"]);
 Route::post('/client/store', [clientController::class, "store"]);

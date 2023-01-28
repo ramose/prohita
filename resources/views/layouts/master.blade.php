@@ -8,6 +8,10 @@
     <title>Prohita</title>
 </head>
 <body>
+    <header>
+        @include('includes.navbar')
+    </header>
     @yield('content')
+</div>
 </body>
 </html>

@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+    public function home(){
+        return view("home");
+    }
+
     public function index(){
         $client = Client::all();
         return view("client.index", compact(['client']));
