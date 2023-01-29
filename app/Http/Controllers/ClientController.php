@@ -32,6 +32,7 @@ class ClientController extends Controller
         // dd($id);
         $client = Client::find($id);
         // dd($client);
+        // session()->flash('warning', 'Settings saved successfully.');
         return view('client.edit', compact(['client']));
         
     }
