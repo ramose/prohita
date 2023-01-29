@@ -8,7 +8,7 @@
     <header>
         @include('includes.navbar')
     </header>
-    <div class="row">
+    <div style="padding-top:10px;">
     @yield('content')
     </div>
     </div>

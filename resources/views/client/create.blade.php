@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
-<div class="container" style="max-width: 990px;">
-<h1>Add Client</h1>
+<div>
+<h3>Add Client</h3>
 <form action="/client/store" method="POST">
     @csrf
     <div class="mb-3">
@@ -37,3 +37,4 @@
     <input type="submit" name="submit" value="Save" class="btn btn-primary">
 </form>
 </div>
+@stop

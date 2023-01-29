@@ -1,19 +1,26 @@
 @extends('layouts.master')
 @section('content')
-<div class="container">
+<div>
     
     <div class="d-flex justify-content-between">
-        <h1>Clients</h1>
-        <div>
+        <h3>Clients</h3>
+        <p>
 <a href="/client/create" class="btn btn-primary">Add Client</a>
-        </div>
+        </p>
     </div>
+
+
+    
+
+
 <table class="table">
     <tr>
         <th>Name</th>
         <th>Email 1</th>
         <th>Email 2</th>
         <th>Mobile</th>
+        <th></th>
+        <th></th>
     </tr>
     @foreach ($client as $w)
     <tr>

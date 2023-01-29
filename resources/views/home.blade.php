@@ -2,9 +2,9 @@
 @section('content')
 <div class="container">
     <div>
-        <h2>
+        <h3>
             Home
-        </h2>
+        </h3>
     </div>
 </div>
 @stop

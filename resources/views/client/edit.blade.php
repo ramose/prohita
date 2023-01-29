@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<h1>Edit Client</h1>
+<h3>Edit Client</h3>
 <form action="/client/{{ $client->id }}" method="POST">
     @method('put')
     @csrf
@@ -17,3 +17,4 @@
     <input type="text" name="client_mobile" placeholder="Mobile Phone" value="{{ $client->client_mobile }}"/><br>
     <input type="submit" name="submit" value="Update">
 </form>
+@stop
