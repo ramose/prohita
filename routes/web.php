@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\clientController;
-// use DebugBar\DebugBar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,16 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     // Debugbar::info("hello");
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('/', [clientController::class, "home"]);
-Route::get('/client', [clientController::class, "index"]);
-Route::get('/client/create', [clientController::class, "create"]);
-Route::post('/client/store', [clientController::class, "store"]);
-Route::get('/client/{id}/edit', [clientController::class, "edit"]);
-Route::put('/client/{id}', [clientController::class, "update"]);
-Route::delete('/client/{id}', [clientController::class, "destroy"]);
+require __DIR__.'/auth.php';
